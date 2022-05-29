@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style type="text/css">
+
+body 
+
+{
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjam3xjpL3-4OkuehrdtjsuTEx8gNhMJs-30ZpXymE0ss6tkKmo6_yC3E&s=10");
+
+    background-size:100%100%;
+
+    background-repeat:no-repeat;
+
+    background-attachment:scroll;
+
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+img 
+
+{
+
+    vertical-align: middle;
+
+}
+
+.slideshow-container 
+
+{
+
+  max-width: 74%;
+
+  position: relative;
+
+  margin:auto;
+
+}
+
+.prev, .next 
+
+{
+
+  cursor: pointer;
+
+  position: absolute;
+
+  top: 50%;
+
+  width: auto;
+
+  padding: 16px;
+
+  margin-top: -22px;
+
+  color:blue;
+
+  font-weight: bold;
+
+  font-size: 30px;
+
+  transition: 0.6s ease;
+
+  border-radius: 0 3px 3px 0;
+
+  user-select: none;
+
+}
+
+.next 
+
+{
+
+  right: 0;
+
+  border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover 
+
+{
+
+ /* background-color: rgba(0,0,0,0.8);*/
+
+  background-color:white;
+
+}
+
+.numbertext 
+
+{
+
+  color:blue;
+
+  font-size: 22px;
+
+  padding: 8px 12px;
+
+  position: absolute;
+
+  top: 0;
+
+}
+
+.dot 
+
+{
+
+  cursor: pointer;
+
+  height: 15px;
+
+  width: 15px;
+
+  margin: 0 2px;
+
+  background-color: #bbb;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover 
+
+{
+
+  background-color:blue;
+
+}
+
+.h1 {
+
+    background-image:url("https://cdn.wallpapersafari.com/83/44/FOnoH8.gif");
+
+  background-size: cover;
+
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+ font-family: 'Luckiest Guy',cursive;
+
+ 
+
+ font-size:8em;
+
+ text-align:center;}
+
+ table
+
+ {
+
+    font-size:2em;
+
+ }
+
+ .h22{font-size:0.8em;font-family:cursive; text-align:center;color:#4c0140;}
+
+ 
+
+</style>
+
+</head>
+
+<body>
+
+<h1 class="h1">JOY E BIKE </h1>
+
+ <hr width="600"size="5" color="black">   
+
+ <br><br><br><br>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <div class="numbertext">1 / 7</div>
+
+            <img src= "https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/undefined-black-1610359091996.jpg?q=75"   style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <div class="numbertext">2 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZ2jxzXLKWKaYWGgB4PpZrIzSsXAo51V8bA&usqp=CAU"   style="width:100%">
+
+         </div>
+
+         <div class="mySlides fade">
+
+         <div class="numbertext">3 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FRlApTqDNrkOM0MQ9HlwYfK92_UqC10cBA&usqp=CAU"   style="width:100%">
+
+         </div>
+
+         <div class="mySlides fade">
+
+         <div class="numbertext">4 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHPB7uuVkxF0KCy-9c8IZidQ8jwx7kNAcMw&usqp=CAU"   style="width:100%">
+
+         </div>
+
+         <div class="mySlides fade">
+
+         <div class="numbertext">5 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf4SqBCURswptUXMXHhZ7IqTeVtLzO1ThHA&usqp=CAU"   style="width:100%">
+
+         </div>
+
+         <div class="mySlides fade">
+
+         <div class="numbertext">6 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLtIK5i6pSaUleJ-KPcLrxQZKnGVWrQkqigg&usqp=CAU"   style="width:100%">
+
+         </div>
+
+        <div class="mySlides fade">
+
+            <div class="numbertext">7 / 7</div>
+
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Nc6NCIeyG23qa3daGQDuBHKfQC2Hds_25w&usqp=CAU"   style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+        <span class="dot" onclick="currentSlide(2)"></span>
+
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+         <span class="dot" onclick="currentSlide(5)"></span>           
+
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+        <span class="dot" onclick="currentSlide(7)"></span>
+
+    </div>
+
+    <script>
+
+    var slideIndex = 1;
+
+    showSlides(slideIndex);
+
+    function plusSlides(n)
+
+     {
+
+    showSlides(slideIndex += n);
+
+    }
+
+    function currentSlide(n)
+
+     {
+
+    showSlides(slideIndex = n);
+
+    }
+
+    function showSlides(n)
+
+     {
+
+    var i;
+
+    var slides = document.getElementsByClassName("mySlides");
+
+    var dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";
+
+    }
+
+    for (i = 0; i < dots.length; i++)
+
+     {
+
+    dots[i].className = dots[i].className.replace(" active", "");
+
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    dots[slideIndex - 1].className += " active";
+
+    }
+
+    </script>
+
+    <br><br><br><br>
+
+       <h1 style="color:black;font-size:4em;"> <ul><li>JOY E BIKE PRICE</li></ul></h1>
+
+    <center>    <table border="8" height="50" width="400"><tr><td><h2 ><center>From RS 1.08 Lakh Onward</center></h2></td></tr></table></center>
+
+    
+
+       <h1 style="color:black;font-size:4em;"> <ul><li>Joy E Bike Specifications</li></ul></h1>
+
+    <center>
+
+    <table border="1" height="400" width="650">
+
+    <tr>
+
+    <td colspan="6"><center>Fuel Type</center></td>
+
+    <td><center>Electric</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Max Power</center></td>
+
+    <td><center>1500 W</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Rated Power</center></td>
+
+    <td><center>250 W</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Braking System</center></td>
+
+    <td><center>CBS</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Front Break Type</center></td>
+
+    <td><center>Disc</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Battery Charging Time</center></td>
+
+    <td><center>4 - 4.5 Hrs </center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Rear Brake Type</center></td>
+
+    <td><center>Disc</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Body Type</center></td>
+
+    <td><center>Electric Bikes</center></td>
+
+    </tr>
+
+    </table></center>
+
+    
+
+    <br>
+
+    
+
+    <h1 style="color:black;font-size:4em;"><ul><li>Joy e Bike Features</li></ul></h1>
+
+    <center>
+
+    <table border="1" height="400" width="650">
+
+    <tr>
+
+    <td colspan="6"><center>Braking Type</center></td>
+
+    <td><center>Combi Brake System</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Charging Point</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Range</center></td>
+
+    <td><center>75 km</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Fast Charging</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Riding Modes</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Navigation</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>LED Tail Light</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Speedometer</center></td>
+
+    <td><center>Digital</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Odometer</center></td>
+
+    <td><center>Digital</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Tripmeter</center></td>
+
+    <td><center>Digital</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Fuel Gauge</center></td>
+
+    <td><center>Digital</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Pass Switch</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Clock</center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Central Locking </center></td>
+
+    <td><center>Yes</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Additional Features</center></td>
+
+    <td><center>RBS,Adjustable Footpegs,Portable Charging</center></td>
+
+    </tr>
+
+    </table></center>
+
+    
+
+    
+
+    
+
+    <h1 style="color:black;font-size:4em;"> <ul><li>Dimensions And Capacity</li></ul></h1>
+
+    
+
+    <center>
+
+    <table border="1" height="400" width="650">
+
+    <tr>
+
+    <td colspan="6"><center>Overall Width</center></td>
+
+    <td><center>813 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Overall Length</center></td>
+
+    <td><center>2156 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Overall Height</center></td>
+
+    <td><center>1112 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Kerb Weight</center></td>
+
+    <td><center>92 Kg</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Wheelbase</center></td>
+
+    <td><center>1320 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Ground Clearance </center></td>
+
+    <td><center>225 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Seat Heighr</center></td>
+
+    <td><center>750 mm</center></td>
+
+    </tr>
+
+    <tr>
+
+    <td colspan="6"><center>Chassis Type</center></td>
+
+    <td><center>Lightweighted Single Cradel Frame</center></td>
+
+    </tr>
+
+    </table></center>
+
+    <h1 style="color:black;font-size:4em;"> <ul><li>About Joy E Bike Monster</li></ul></h1>
+
+    <h4><center>Joy e-bike Monster is an electric commuter bike available at a starting price of Rs. 1,00,875 in India. It is available in only 1 variant and 2 colours. Joy e-bike Monster generates 250 W power from its motor. Joy e-bike Monster comes up with both front and rear disc brakes.
+
+    
+
+    Joy e-bike is an electric two-wheeler brand that is owned by Wardwizard Innovations & Mobility Limited and it has eight offerings in its portfolio. The Monster, in particular, gets a motorcycle-like styling that is closely similar to the Honda Grom 125 mini-bike.
+
+    With a low seat height and extremely light weight of 75kgs, the Monster should be easily accessible to all kind of riders. Although small, it comes equipped with some premium components like upside down forks up front, 14-inch alloy wheels and tubeless tyres.
+
+    The Monster runs on a 250 watt brushless DC hub motor that is powered by a 72V/32Ah lithium-ion battery. While the battery range is impressive at 75kms, the top speed is as low as 25kmph. The battery takes around 4.5 hours to fully top up. It is available in two colour options black and red.</center></h4>
+
+    
+
+    <br><br><br><br><br>
+
+            <center><h2 class="h22" style="text-decoration:overline;"><u>Created By SAMIYA & AIMAN </u></h2></center>
+
+</body>
+
+</html>
